@@ -38,14 +38,10 @@
             this.searchBox = new MetroFramework.Controls.MetroTextBox();
             this.groupBox4 = new System.Windows.Forms.GroupBox();
             this.table = new MetroFramework.Controls.MetroGrid();
-            this.orderCountBox = new MetroFramework.Controls.MetroTextBox();
-            this.metroLabel2 = new MetroFramework.Controls.MetroLabel();
             this.typeTitleBox = new MetroFramework.Controls.MetroTextBox();
             this.metroLabel1 = new MetroFramework.Controls.MetroLabel();
             this.discountBox = new MetroFramework.Controls.MetroTextBox();
             this.metroLabel3 = new MetroFramework.Controls.MetroLabel();
-            this.totalBillBox = new MetroFramework.Controls.MetroTextBox();
-            this.metroLabel4 = new MetroFramework.Controls.MetroLabel();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.groupBox4.SuspendLayout();
@@ -201,47 +197,6 @@
             this.table.TabIndex = 18;
             this.table.SelectionChanged += new System.EventHandler(this.table_SelectionChanged);
             // 
-            // orderCountBox
-            // 
-            // 
-            // 
-            // 
-            this.orderCountBox.CustomButton.Image = null;
-            this.orderCountBox.CustomButton.Location = new System.Drawing.Point(236, 2);
-            this.orderCountBox.CustomButton.Name = "";
-            this.orderCountBox.CustomButton.Size = new System.Drawing.Size(25, 25);
-            this.orderCountBox.CustomButton.Style = MetroFramework.MetroColorStyle.Blue;
-            this.orderCountBox.CustomButton.TabIndex = 1;
-            this.orderCountBox.CustomButton.Theme = MetroFramework.MetroThemeStyle.Light;
-            this.orderCountBox.CustomButton.UseSelectable = true;
-            this.orderCountBox.CustomButton.Visible = false;
-            this.orderCountBox.FontSize = MetroFramework.MetroTextBoxSize.Tall;
-            this.orderCountBox.Lines = new string[0];
-            this.orderCountBox.Location = new System.Drawing.Point(172, 118);
-            this.orderCountBox.MaxLength = 32767;
-            this.orderCountBox.Name = "orderCountBox";
-            this.orderCountBox.PasswordChar = '\0';
-            this.orderCountBox.ScrollBars = System.Windows.Forms.ScrollBars.None;
-            this.orderCountBox.SelectedText = "";
-            this.orderCountBox.SelectionLength = 0;
-            this.orderCountBox.SelectionStart = 0;
-            this.orderCountBox.ShortcutsEnabled = true;
-            this.orderCountBox.Size = new System.Drawing.Size(264, 30);
-            this.orderCountBox.TabIndex = 63;
-            this.orderCountBox.UseSelectable = true;
-            this.orderCountBox.WaterMarkColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
-            this.orderCountBox.WaterMarkFont = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Pixel);
-            // 
-            // metroLabel2
-            // 
-            this.metroLabel2.AutoSize = true;
-            this.metroLabel2.FontSize = MetroFramework.MetroLabelSize.Tall;
-            this.metroLabel2.Location = new System.Drawing.Point(40, 118);
-            this.metroLabel2.Name = "metroLabel2";
-            this.metroLabel2.Size = new System.Drawing.Size(113, 25);
-            this.metroLabel2.TabIndex = 62;
-            this.metroLabel2.Text = "Order Count";
-            // 
             // typeTitleBox
             // 
             // 
@@ -299,7 +254,7 @@
             this.discountBox.CustomButton.Visible = false;
             this.discountBox.FontSize = MetroFramework.MetroTextBoxSize.Tall;
             this.discountBox.Lines = new string[0];
-            this.discountBox.Location = new System.Drawing.Point(172, 231);
+            this.discountBox.Location = new System.Drawing.Point(172, 127);
             this.discountBox.MaxLength = 32767;
             this.discountBox.Name = "discountBox";
             this.discountBox.PasswordChar = '\0';
@@ -318,52 +273,11 @@
             // 
             this.metroLabel3.AutoSize = true;
             this.metroLabel3.FontSize = MetroFramework.MetroLabelSize.Tall;
-            this.metroLabel3.Location = new System.Drawing.Point(40, 231);
+            this.metroLabel3.Location = new System.Drawing.Point(40, 127);
             this.metroLabel3.Name = "metroLabel3";
             this.metroLabel3.Size = new System.Drawing.Size(81, 25);
             this.metroLabel3.TabIndex = 73;
             this.metroLabel3.Text = "Discount";
-            // 
-            // totalBillBox
-            // 
-            // 
-            // 
-            // 
-            this.totalBillBox.CustomButton.Image = null;
-            this.totalBillBox.CustomButton.Location = new System.Drawing.Point(236, 2);
-            this.totalBillBox.CustomButton.Name = "";
-            this.totalBillBox.CustomButton.Size = new System.Drawing.Size(25, 25);
-            this.totalBillBox.CustomButton.Style = MetroFramework.MetroColorStyle.Blue;
-            this.totalBillBox.CustomButton.TabIndex = 1;
-            this.totalBillBox.CustomButton.Theme = MetroFramework.MetroThemeStyle.Light;
-            this.totalBillBox.CustomButton.UseSelectable = true;
-            this.totalBillBox.CustomButton.Visible = false;
-            this.totalBillBox.FontSize = MetroFramework.MetroTextBoxSize.Tall;
-            this.totalBillBox.Lines = new string[0];
-            this.totalBillBox.Location = new System.Drawing.Point(172, 174);
-            this.totalBillBox.MaxLength = 32767;
-            this.totalBillBox.Name = "totalBillBox";
-            this.totalBillBox.PasswordChar = '\0';
-            this.totalBillBox.ScrollBars = System.Windows.Forms.ScrollBars.None;
-            this.totalBillBox.SelectedText = "";
-            this.totalBillBox.SelectionLength = 0;
-            this.totalBillBox.SelectionStart = 0;
-            this.totalBillBox.ShortcutsEnabled = true;
-            this.totalBillBox.Size = new System.Drawing.Size(264, 30);
-            this.totalBillBox.TabIndex = 72;
-            this.totalBillBox.UseSelectable = true;
-            this.totalBillBox.WaterMarkColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
-            this.totalBillBox.WaterMarkFont = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Pixel);
-            // 
-            // metroLabel4
-            // 
-            this.metroLabel4.AutoSize = true;
-            this.metroLabel4.FontSize = MetroFramework.MetroLabelSize.Tall;
-            this.metroLabel4.Location = new System.Drawing.Point(40, 174);
-            this.metroLabel4.Name = "metroLabel4";
-            this.metroLabel4.Size = new System.Drawing.Size(83, 25);
-            this.metroLabel4.TabIndex = 71;
-            this.metroLabel4.Text = "Total Bills";
             // 
             // groupBox1
             // 
@@ -371,10 +285,6 @@
             this.groupBox1.Controls.Add(this.discountBox);
             this.groupBox1.Controls.Add(this.metroLabel1);
             this.groupBox1.Controls.Add(this.typeTitleBox);
-            this.groupBox1.Controls.Add(this.totalBillBox);
-            this.groupBox1.Controls.Add(this.metroLabel2);
-            this.groupBox1.Controls.Add(this.metroLabel4);
-            this.groupBox1.Controls.Add(this.orderCountBox);
             this.groupBox1.Location = new System.Drawing.Point(632, 70);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(489, 319);
@@ -415,14 +325,10 @@
         private MetroFramework.Controls.MetroTextBox searchBox;
         private System.Windows.Forms.GroupBox groupBox4;
         private MetroFramework.Controls.MetroGrid table;
-        private MetroFramework.Controls.MetroTextBox orderCountBox;
-        private MetroFramework.Controls.MetroLabel metroLabel2;
         private MetroFramework.Controls.MetroTextBox typeTitleBox;
         private MetroFramework.Controls.MetroLabel metroLabel1;
         private MetroFramework.Controls.MetroTextBox discountBox;
         private MetroFramework.Controls.MetroLabel metroLabel3;
-        private MetroFramework.Controls.MetroTextBox totalBillBox;
-        private MetroFramework.Controls.MetroLabel metroLabel4;
         private System.Windows.Forms.GroupBox groupBox1;
     }
 }

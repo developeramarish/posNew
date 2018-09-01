@@ -161,6 +161,12 @@
     <Compile Include="CreateUnit_Type.Designer.cs">
       <DependentUpon>CreateUnit_Type.cs</DependentUpon>
     </Compile>
+    <Compile Include="Customer HomePage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Customer HomePage.Designer.cs">
+      <DependentUpon>Customer HomePage.cs</DependentUpon>
+    </Compile>
     <Compile Include="CustomersViews.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -315,6 +321,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="CreateUnit_Type.resx">
       <DependentUpon>CreateUnit_Type.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Customer HomePage.resx">
+      <DependentUpon>Customer HomePage.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="CustomersViews.resx">
       <DependentUpon>CustomersViews.cs</DependentUpon>

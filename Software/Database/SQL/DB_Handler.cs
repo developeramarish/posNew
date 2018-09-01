@@ -43,6 +43,7 @@ namespace Software.Database.SQL
             {
                 // Creating Oracle Command for perticular query through that connection
                 OracleCommand command = new OracleCommand(query, connection);
+
                 return command.ExecuteNonQuery();
             }
 

@@ -42,6 +42,7 @@ namespace Forms
                 else if (!(employee is null))
                 {
                     access = employee.Authority;
+                    if(Login_Form.access.Equals("CUSTOMER")) { new Customer_HomePage().ShowDialog(); }
                     new HomePage().ShowDialog();
                 }
                 else

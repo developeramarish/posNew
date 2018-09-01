@@ -100,7 +100,7 @@ namespace Forms
                     food.Availability = infoGroup.Controls.OfType<RadioButton>()
                         .FirstOrDefault(r => r.Checked).Text;
                     food.Other_Charges = Convert.ToInt32(chargesBox.Text);
-                    //food.Stock_Count = Convert.ToInt32(stockBox.Text);
+                    food.Stock_Count = Convert.ToInt32(stockBox.Text);
                     food.Picture = pictureBox.ImageLocation;
                     Software.Database.SQL.FoodDB.UpdateFood(food);
                     MetroFramework.MetroMessageBox.Show(this, "Your data has been updated.", "Successfully Completed", MessageBoxButtons.OK, MessageBoxIcon.Information);

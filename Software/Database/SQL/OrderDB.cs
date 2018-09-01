@@ -26,7 +26,8 @@ namespace Software.Database.SQL
         {
             POS_Order order = new POS_Order
             {
-                Id = Int32.Parse(row["Id"].ToString()),
+                //Id = Int32.Parse(row["Id"].ToString()),
+                
                 Description = row["Description"].ToString(),
                 Place_Time = Convert.ToDateTime(row["Place_Time"].ToString()),
                 Employee_ID = Int32.Parse(row["Employee_Id"].ToString()),

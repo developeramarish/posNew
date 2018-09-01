@@ -78,5 +78,15 @@ namespace Software.Database.SQL
             DB_Handler.ExecuteQuery(query);
         }
 
+        public static void UpdateStockCountOnOrder(int Order_Id)
+        {
+            string query =
+                "DECLARE " +
+                "BEGIN " +
+                "update_stock_on_order(" + Order_Id + ");" +
+                "END;";
+            DB_Handler.ExecuteQuery(query);
+        }
+
     }
 }

@@ -4,6 +4,7 @@ using System.Data;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using Oracle.ManagedDataAccess.Client;
 
 namespace Software.Database.SQL
 {
@@ -41,5 +42,24 @@ namespace Software.Database.SQL
                 "END;";
             DB_Handler.ExecuteQuery(query);
         }
+
+        public static int stockCheck(Software.Model.Order_Food food)
+        {
+            int stock=0;
+            OracleConnection conn = DB_Conn.GetOracleConnection();
+            string sql = "select stock_count from food where id="+food.Food_Id;
+            OracleCommand cmd = new OracleCommand(sql, conn);
+            cmd.CommandType = CommandType.Text;
+            OracleDataReader dr = cmd.ExecuteReader();
+            if (dr.Read())
+            {
+                stock = Convert.ToInt32(dr["stock_count"].ToString());
+            }
+            conn.Close();
+            return stock;
+
+        }
+
+
     }
 }

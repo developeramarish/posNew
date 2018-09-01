@@ -24,8 +24,6 @@ namespace Software.Database.SQL
             {
                 Id = Int32.Parse(row["Id"].ToString()),
                 Type_Title = row["Type_Title"].ToString(),
-                Order_Count = Int32.Parse(row["Order_Count"].ToString()),
-                Total_Bill = Int32.Parse(row["Total_Bill"].ToString()),
                 Discount_Rate = Int32.Parse(row["Discount_Rate"].ToString())
             };
             return customer_Type;
@@ -35,7 +33,7 @@ namespace Software.Database.SQL
         {
             string query =
                 "BEGIN " +
-                "customer_type_pkg.insert_customer_type('" + customer_Type.Type_Title + "', " + customer_Type.Order_Count + ", " + customer_Type.Total_Bill + ", " + customer_Type.Discount_Rate + "); " +
+                "customer_type_pkg.insert_customer_type('" + customer_Type.Type_Title + "', " + customer_Type.Discount_Rate + "); " +
                 "END;";
             DB_Handler.ExecuteQuery(query);
         }
@@ -44,7 +42,7 @@ namespace Software.Database.SQL
         {
             string query =
                 "BEGIN " +
-                "customer_type_pkg.update_customer_type(" + customer_Type.Id + ", '" + customer_Type.Type_Title + "', " + customer_Type.Order_Count + ", " + customer_Type.Total_Bill + ", " + customer_Type.Discount_Rate + "); " +
+                "customer_type_pkg.update_customer_type(" + customer_Type.Id + ", '" + customer_Type.Type_Title + "', " + customer_Type.Discount_Rate + "); " +
                 "END;";
             DB_Handler.ExecuteQuery(query);
         }

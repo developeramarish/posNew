@@ -8,7 +8,7 @@ namespace Software.Model
 {
     public class POS_Order
     {
-        public int Id { get; set; }
+        public static int Id { get; set; }
         public string Description { get; set; }
         public DateTime Place_Time { get; set; }
         public int Employee_ID { get; set; }

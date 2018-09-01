@@ -19,3 +19,4 @@ C:\Users\ASUS\Downloads\Compressed\POS\POS\Software\obj\Debug\Software.csproj.Co
 C:\Users\ASUS\Downloads\Compressed\POS\POS\Software\obj\Debug\Software.csproj.CopyComplete
 C:\Users\ASUS\Downloads\Compressed\POS\POS\Software\obj\Debug\Software.exe
 C:\Users\ASUS\Downloads\Compressed\POS\POS\Software\obj\Debug\Software.pdb
+C:\Users\ASUS\Downloads\Compressed\POS\POS\Software\obj\Debug\Software.csprojResolveAssemblyReference.cache

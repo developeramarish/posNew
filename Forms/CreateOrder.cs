@@ -137,15 +137,37 @@ namespace Forms
                 Total_Bill = Convert.ToDouble(totalBox.Text),
                 CardNumber = cardBox.Text
             };
-            Software.Database.SQL.OrderDB.InsertOrder(order);
-           
+
+            var orderPossible = true; 
+
             foreach (var food in bucket_foods)
             {
-                Software.Database.SQL.OrderFoodDB.InsertOrderFood(food);
+                var stock = Software.Database.SQL.OrderFoodDB.stockCheck(food);
+                var count = food.Count;
+                if (count > stock)
+                {
+                    orderPossible = false;
+                    break;
+                }
             }
-           
-            MetroFramework.MetroMessageBox.Show(this, "Order has been added!", "Ordered Successfully!", MessageBoxButtons.OK, MessageBoxIcon.Information);
-            Close();
+
+            if (orderPossible == true)
+            {
+                Software.Database.SQL.OrderDB.InsertOrder(order);
+
+                foreach (var food in bucket_foods)
+                {
+                    Software.Database.SQL.OrderFoodDB.InsertOrderFood(food);
+                }
+                MetroFramework.MetroMessageBox.Show(this, "Order has been added!", "Ordered Successfully!", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                Close();
+            }
+            else
+            {
+                MetroFramework.MetroMessageBox.Show(this, "Order denied !", "Order Denied!", MessageBoxButtons.OK, MessageBoxIcon.Hand);
+                Close();
+            }
+
         }
 
         private void cancelBtn_Click(object sender, EventArgs e)

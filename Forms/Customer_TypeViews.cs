@@ -27,8 +27,7 @@ namespace Forms
                 int selectedrowindex = table.SelectedCells[0].RowIndex;
                 DataGridViewRow selectedRow = table.Rows[selectedrowindex];
                 typeTitleBox.Text = Convert.ToString(selectedRow.Cells["Type_Title"].Value);
-                orderCountBox.Text = Convert.ToString(selectedRow.Cells["Order_Count"].Value);
-                totalBillBox.Text = Convert.ToString(selectedRow.Cells["Total_Bill"].Value);
+                
                 discountBox.Text = Convert.ToString(selectedRow.Cells["Discount_Rate"].Value);
             }
         }
@@ -57,8 +56,6 @@ namespace Forms
 
                 type.Id = Convert.ToInt32(Convert.ToString(selectedRow.Cells["Id"].Value));
                 type.Type_Title = typeTitleBox.Text;
-                type.Order_Count = Convert.ToInt32(orderCountBox.Text);
-                type.Total_Bill = Convert.ToInt32(totalBillBox.Text);
                 type.Discount_Rate = Convert.ToInt32(discountBox.Text);
                 Software.Database.SQL.Customer_TypeDB.UpdateCustomer_Type(type);
             }

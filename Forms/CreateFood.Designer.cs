@@ -153,6 +153,10 @@
             this.stockBox.Size = new System.Drawing.Size(162, 30);
             this.stockBox.TabIndex = 63;
             this.stockBox.Text = "will be generated...";
+            
+                
+                
+                
             this.stockBox.UseSelectable = true;
             this.stockBox.WaterMarkColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
             this.stockBox.WaterMarkFont = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Pixel);

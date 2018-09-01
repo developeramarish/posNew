@@ -37,7 +37,6 @@
             this.tileCustomer = new MetroFramework.Controls.MetroTile();
             this.metroTile2 = new MetroFramework.Controls.MetroTile();
             this.metroTile3 = new MetroFramework.Controls.MetroTile();
-            this.metroTile4 = new MetroFramework.Controls.MetroTile();
             this.metroTile5 = new MetroFramework.Controls.MetroTile();
             this.userLabel = new MetroFramework.Controls.MetroLabel();
             this.metroTile1 = new MetroFramework.Controls.MetroTile();
@@ -150,22 +149,10 @@
             this.metroTile3.UseSelectable = true;
             this.metroTile3.Click += new System.EventHandler(this.metroTile3_Click);
             // 
-            // metroTile4
-            // 
-            this.metroTile4.ActiveControl = null;
-            this.metroTile4.Location = new System.Drawing.Point(241, 498);
-            this.metroTile4.Name = "metroTile4";
-            this.metroTile4.Size = new System.Drawing.Size(158, 164);
-            this.metroTile4.Style = MetroFramework.MetroColorStyle.Lime;
-            this.metroTile4.TabIndex = 36;
-            this.metroTile4.Text = "Purchase";
-            this.metroTile4.UseSelectable = true;
-            this.metroTile4.Click += new System.EventHandler(this.metroTile4_Click);
-            // 
             // metroTile5
             // 
             this.metroTile5.ActiveControl = null;
-            this.metroTile5.Location = new System.Drawing.Point(411, 498);
+            this.metroTile5.Location = new System.Drawing.Point(240, 498);
             this.metroTile5.Name = "metroTile5";
             this.metroTile5.Size = new System.Drawing.Size(158, 164);
             this.metroTile5.Style = MetroFramework.MetroColorStyle.Black;
@@ -191,7 +178,7 @@
             // metroTile1
             // 
             this.metroTile1.ActiveControl = null;
-            this.metroTile1.Location = new System.Drawing.Point(575, 498);
+            this.metroTile1.Location = new System.Drawing.Point(411, 498);
             this.metroTile1.Name = "metroTile1";
             this.metroTile1.Size = new System.Drawing.Size(158, 164);
             this.metroTile1.Style = MetroFramework.MetroColorStyle.Teal;
@@ -208,7 +195,6 @@
             this.Controls.Add(this.metroTile1);
             this.Controls.Add(this.userLabel);
             this.Controls.Add(this.metroTile5);
-            this.Controls.Add(this.metroTile4);
             this.Controls.Add(this.metroTile3);
             this.Controls.Add(this.metroTile2);
             this.Controls.Add(this.tileJobs);
@@ -237,7 +223,6 @@
         private MetroFramework.Controls.MetroTile tileCustomer;
         private MetroFramework.Controls.MetroTile metroTile2;
         private MetroFramework.Controls.MetroTile metroTile3;
-        private MetroFramework.Controls.MetroTile metroTile4;
         private MetroFramework.Controls.MetroTile metroTile5;
         private MetroFramework.Controls.MetroLabel userLabel;
         private MetroFramework.Controls.MetroTile metroTile1;
